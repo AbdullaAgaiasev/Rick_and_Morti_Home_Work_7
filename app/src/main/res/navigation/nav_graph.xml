@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/continionFragment">
+
+
+    <fragment
+        android:id="@+id/heroFragment"
+        android:name="com.example.rickandmorti.HeroFragment"
+        android:label="fragment_hero"
+        tools:layout="@layout/fragment_hero" >
+        <action
+            android:id="@+id/action_heroFragment_to_continionFragment"
+            app:destination="@id/continionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/continionFragment"
+        android:name="com.example.rickandmorti.ContinionFragment"
+        android:label="fragment_continion"
+        tools:layout="@layout/fragment_continion" />
+
+
+</navigation>
